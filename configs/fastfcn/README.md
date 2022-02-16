@@ -1,4 +1,6 @@
-# FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation
+# FastFCN
+
+[FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation](https://arxiv.org/abs/1903.11816)
 
 ## Introduction
 
@@ -8,10 +10,20 @@
 
 <a href="https://github.com/open-mmlab/mmsegmentation/blob/v0.18.0/mmseg/models/necks/jpu.py#L12">Code Snippet</a>
 
-<details>
-<summary align="right"><a href="https://arxiv.org/abs/1903.11816">FastFCN (ArXiv'2019) </a></summary>
+## Abstract
 
-```latex
+<!-- [ABSTRACT] -->
+
+Modern approaches for semantic segmentation usually employ dilated convolutions in the backbone to extract high-resolution feature maps, which brings heavy computation complexity and memory footprint. To replace the time and memory consuming dilated convolutions, we propose a novel joint upsampling module named Joint Pyramid Upsampling (JPU) by formulating the task of extracting high-resolution feature maps into a joint upsampling problem. With the proposed JPU, our method reduces the computation complexity by more than three times without performance loss. Experiments show that JPU is superior to other upsampling modules, which can be plugged into many existing approaches to reduce computation complexity and improve performance. By replacing dilated convolutions with the proposed JPU module, our method achieves the state-of-the-art performance in Pascal Context dataset (mIoU of 53.13%) and ADE20K dataset (final score of 0.5584) while running 3 times faster.
+
+<!-- [IMAGE] -->
+<div align=center>
+<img src="https://user-images.githubusercontent.com/24582831/142901374-6e0252ab-6e0f-4acd-86ad-1e9f49be3185.png" width="70%"/>
+</div>
+
+## Citation
+
+```bibtex
 @article{wu2019fastfcn,
 title={Fastfcn: Rethinking dilated convolution in the backbone for semantic segmentation},
 author={Wu, Huikai and Zhang, Junge and Huang, Kaiqi and Liang, Kongming and Yu, Yizhou},
@@ -19,8 +31,6 @@ journal={arXiv preprint arXiv:1903.11816},
 year={2019}
 }
 ```
-
-</details>
 
 ## Results and models
 
